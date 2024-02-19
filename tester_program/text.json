@@ -1,0 +1,10 @@
+{
+    "title" : {
+        "hu" : "Teszteld az eredményeidet",
+        "en" : "Test your results"
+    },
+    "file" : {
+        "hu" : "Fájl kiválasztása",
+        "en" : "Choose file"
+    }
+}
