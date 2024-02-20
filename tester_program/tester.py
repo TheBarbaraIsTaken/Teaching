@@ -6,10 +6,9 @@ class Tester:
     def __init__(self):
         self.exercise = Exercise()        
 
+        self.python_command = "python3"
         if sys.platform.startswith('win'):
             self.python_command = "python"
-        else:
-            self.python_command = "python3"
     
 
     def run_tests(self, program_path):

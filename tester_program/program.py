@@ -1,4 +1,4 @@
-print('x')
-x = int(input("szamot: "))
-print("2")
-print(2*x)
+#print('x')
+x = int(input())
+y = int(input())
+print(y*x)
