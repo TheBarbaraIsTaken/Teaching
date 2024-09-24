@@ -1,22 +1,36 @@
 {
-    "ex1" : [
-        {
-            "input" : 1,
-            "output" : 2
-        },
-        {
-            "input" : 2,
-            "output" : 4
-        },
-        {
-            "input" : 3,
-            "output" : 6
-        }
-    ],
-    "ex2" : [
-        {
-            "input" : ["a", 2],
-            "output" : "aa"
-        }
-    ]
+    "ex1" : {
+        "label" : "Első feladat",
+        "data": [
+            {
+                "input" : [1],
+                "output" : "2\n"
+            },
+            {
+                "input" : [2],
+                "output" : "4\n"
+            },
+            {
+                "input" : [3],
+                "output" : "6\n"
+            }
+        ]
+    },
+    "ex2" : {
+        "label" : "Első feladat",
+        "data": [
+            {
+                "input" : [2, "a"],
+                "output" : "aa\n"
+            },
+            {
+                "input" : [0, "c"],
+                "output" : ""
+            },
+            {
+                "input" : [5, "ab"],
+                "output" : "ababababab\n"
+            }
+        ]
+    }
 }

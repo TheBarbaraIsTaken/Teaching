@@ -1,13 +1,15 @@
 import json
+import re
 import subprocess
 import sys
 
 PROGRAM_PATH = "program.py"
 OUTPUT_PATH = "test_result.json"
 INPUT_DATA = [
-    "1\n2",
+    "1\n2\n10",
     "2\n3",
 ]
+PATTERN = r"(#[\w\s:,.!?]*#)"
 
 if __name__ == "__main__":
     python_command = "python3"
@@ -26,11 +28,14 @@ if __name__ == "__main__":
             # Store the print results of the program in a list
             outputs = result.stdout
 
-            program_results.append(outputs)
+            program_results.append(re.split(PATTERN, outputs)[1:])
 
         # TODO: write inputs and program_results to json file
         # TODO: do something to have more exercises: print a special character?
-        print(program_results)
+        result = dict(zip(INPUT_DATA, program_results))
+        
+        for k,v in result.items():
+            print([k],v,sep='\t')
     except subprocess.CalledProcessError as e:
         print("Error:", e)
     

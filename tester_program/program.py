@@ -1,4 +1,7 @@
 #print('x')
 x = int(input())
 y = int(input())
+print("#Első feladat:#")
 print(y*x)
+print("#Második feladat:#")
+print(y**x)
